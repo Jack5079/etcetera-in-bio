@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@marko/tags-api-preview':
+    specifier: ^0.7.2
+    version: 0.7.2(marko@5.31.17)
+  hono:
+    specifier: ^3.10.1
+    version: 3.11.8
   marko:
     specifier: ^5.31.17
     version: 5.31.17
@@ -817,6 +823,15 @@ packages:
       - terser
     dev: true
 
+  /@marko/tags-api-preview@0.7.2(marko@5.31.17):
+    resolution: {integrity: sha512-fBfDmOkBJ5T4gRUfoEqbTgbz5VgSEb525TmbMQDP7Omv44WeAhWnY9phvrwuZSjQBg7CWklsyGzSloOE2ctfmQ==}
+    peerDependencies:
+      marko: '>= 5.22.0'
+    dependencies:
+      magic-string: 0.30.5
+      marko: 5.31.17
+    dev: false
+
   /@marko/translator-default@5.31.7(@marko/compiler@5.33.7)(marko@5.31.17):
     resolution: {integrity: sha512-ZFIWcE2WBEm4re8o7AJ4bC75Znz2cGBJH99I98F2Aj/gmM0+FdxjXLYM8ykXCssAQsoJ5yTo8X/Po5tugYN0fg==}
     peerDependencies:
@@ -1304,6 +1319,11 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
+  /hono@3.11.8:
+    resolution: {integrity: sha512-s+7FDN0CS0lAvooyj4oQw0PyEec7I+YuVg40gtFHuUrfHBEhKITrLu4dskTdeYn0Xvhbz7s4yRJebJx6gCN/5Q==}
+    engines: {node: '>=16.0.0'}
+    dev: false
+
   /htmljs-parser@5.5.1:
     resolution: {integrity: sha512-mzTQUcQFDLS6LN20AiPKxG5dXmQOhej67ztIpnDzz5raAxrNsh8A17Wqef7KLWI4yJ4Uolj3syJmddFPdATn2Q==}
 
@@ -1419,6 +1439,13 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  /magic-string@0.30.5:
+    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
 
   /marko@5.31.17:
     resolution: {integrity: sha512-QC75Mlsq05LAvL2F/EPm0eLJREzVCo/nQMfcf48uwsqlGr+eAUjlU/m+yN3yLctb95iLjrny7qx5iVKvrCaIBg==}

@@ -1,0 +1,12 @@
+<let/selected/>
+<select name="timezone" onChange(e) { selected = e.target.value; }>
+	<option value=null>
+		None
+	</option>
+	<for|timezone| of=Intl.supportedValuesOf("timeZone")>
+		<option>${timezone}</option>
+	</for>
+</select>
+<if=selected>
+	${new Date().toLocaleString([], { timeZone: selected })}
+</if>

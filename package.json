@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
+    "@marko/tags-api-preview": "^0.7.2",
+    "hono": "^3.10.1",
     "marko": "^5.31.17"
   },
   "devDependencies": {
@@ -16,4 +18,4 @@
     "preview": "marko-run preview",
     "start": "node --enable-source-maps ./dist/index.mjs"
   }
-}
+} 

@@ -1,29 +1,41 @@
-<div.container>
-  <header>
-    <img.logo src="./logo.svg" alt="Marko"/>
-  </header>
-  <main>
-    <p>Edit <code>./src/routes/_index/+page.marko</code> and save to reload.</p>
-    <a href="https://markojs.com/docs/getting-started">
-      Learn Marko
-    </a>
-  </main>
-</div>
-<mouse-mask/>
+<h1>
+	<svg
+		height="39"
+		width="100%"
+		fill="currentColor"
+		viewBox="0 0 82.738 185.629"
+	>
+		<g transform="translate(26.202 .209)">
+			<path d="M2.167 109.834a14.14 14.14 0 0 0-14.172 14.172v47.242a14.13 14.13 0 0 0 14.172 14.173H49.41a14.14 14.14 0 0 0 14.172-14.173v-47.242c0-7.842-6.33-14.172-14.172-14.172zm19.118 14.172h23.621c.13.019.277.037.406.056.184.018.387.055.572.092.24.056.498.13.738.222.185.073.37.147.535.24.314.166.61.369.868.609a.868.868 0 0 1 .221.166c.295.295.535.627.738.978.222.369.37.738.48 1.144s.166.812.166 1.218v23.62a4.721 4.721 0 0 1-4.724 4.725 4.71 4.71 0 0 1-4.724-4.724v-12.217l-29.73 29.73a4.722 4.722 0 0 1-6.68 0 4.722 4.722 0 0 1 0-6.681l29.711-29.73H21.285a4.721 4.721 0 0 1-4.724-4.723 4.721 4.721 0 0 1 4.724-4.724z"/>
+			<circle cx="-18.343" cy="17.592" r="14.542"/>
+			<circle cx="42.269" cy="31.198" r="31.407"/>
+			<circle cx="-20.033" cy="79.153" r="23.308"/>
+			<circle cx="37.3" cy="87.777" r="14.542"/>
+		</g>
+	</svg>
+	<a href="https://cetera.uk">
+		Etcetera
+	</a>
+	 in Bio
+</h1>
 
-style {
-  .container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(1em, 2vw, 2em); 
-    padding: 1em;
-    box-sizing: border-box;
-    height:100%;
-    width:100%;
-  }
-  img.logo {
-    width:12em;
-  }
-}
+<p>Link-in-bio sites to go!</p>
+<bio-form/>
+<h2>Where do I publish my site?</h2>
+<p>
+	Etcetera in Bio outputs a static site.
+	<a href="https://developers.cloudflare.com/pages/get-started/direct-upload/#drag-and-drop">
+		Cloudflare Pages
+	</a>
+	 and
+	<a href="https://docs.netlify.com/site-deploys/create-deploys/#drag-and-drop">
+		Netlify
+	</a>
+	${" "}both have free plans and allow you to directly upload without needing a Git repo.
+</p>
+<style>
+	h1,
+	h1 + p {
+		text-align: center;
+	}
+</style>

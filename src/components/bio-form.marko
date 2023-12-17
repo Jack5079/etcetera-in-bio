@@ -1,0 +1,54 @@
+<noscript>Etcetera in Bio runs on your client using JavaScript to protect your privacy and our resources. Enable JavaScript to use Etcetera in Bio. (This does not apply to the output, which works without JavaScript!)</noscript>
+<form onSubmit(event) {
+	event.preventDefault()
+	const data = new FormData(event.target)
+	console.log(data)
+}>
+	<fieldset>
+		<legend>Import</legend>
+		<input type="file">
+	</fieldset>
+	<fieldset>
+		<legend>Info</legend>
+		<label>
+			Timezone
+			<bio-timezone/>
+		</label>
+	</fieldset>
+	<fieldset>
+		<legend>Links</legend>
+		<let/link_count=0/>
+		<label>
+			How many?
+			<input type="number" value:=link_count min=
+			0>
+		</label>
+		<br>
+		<for|i| from=1 to=link_count>
+			<input type="url" name=`social_${i}` required>
+			<br>
+		</for>
+	</fieldset>
+	<fieldset>
+		<legend>Buttons</legend>
+		 Freely licensed 88x31 buttons for your footer.
+
+		<for|button| of=[
+			"Use Sideberry, not Arc! (by Jack W.)",
+			"Etcetera in Bio (by Jack W.)",
+			"Please theme this app (by Jack W.)",
+			"Increment (by easrng)",
+		]>
+			<label>
+				<input type="checkbox">
+				${button}
+			</label>
+		</for>
+	</fieldset>
+	<input type="submit" value="Download">
+</form>
+<style>
+	label {
+		display: block;
+	}
+</style>
